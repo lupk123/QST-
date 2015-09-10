@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>制作注册页</title>
+</head>
+<body>
+<h3>注册页</h3>
+<form action = "register.asp" method = "post">
+    姓名：<input type = "text" name = "username"/><br/>
+    密码：<input type = "password" name = "password"/><br/>
+    性别：<input type = "radio" name = "sex" value = "male" checked = "checked"/>男
+          <input type = "radio" name = "sex" value = "female"/>女<br/>
+    照片：<input type = "file" name = "photo"/><br/>
+    爱好：<input type = "checkbox" name = "hobby1" value = "book"/>书
+          <input type = "checkbox" name = "hobby2" value = "sport"/>运动
+          <input type = "checkbox" name = "hobby2" value = "chatting"/>聊天<br/>
+    所在城市：<select name = "city">
+                <option value = "0" selected = "selected">请选择</option>
+                <option value = "qingdao">青岛</option>
+                <option value = "jinan">济南</option>
+             </select><br/>
+    协议：<br/>
+    <textarea rows="8" cols="24" name = "content">请遵守相关规定，相互尊重，营造良好氛围</textarea><br/>
+    <input type = "checkbox" value = '1' checked = "checked"/>我认真阅读并接受以上协议<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<input type = "submit" value = "提交" disabled = "disabled"/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<input type = "reset" value = "重置"/>
+</form>
+</body>
+</html>

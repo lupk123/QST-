@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>都市信息网</title>
+    <link rel = "stylesheet" href="css/basic.css"/>
+    <script type="text/javascript">
+        function reinitIframe(){
+            var iframe = document.getElementById("test");
+            try{
+                var bHeight = iframe.contentWindow.document.body.scrollHeight;
+                var dHeight = iframe.contentWindow.document.documentElement.scrollHeight;
+                var height = Math.max(bHeight, dHeight);
+                iframe.height = height;
+                console.log(height);
+            }catch (ex){}
+        }
+        window.setInterval("reinitIframe()", 200);
+    </script>
+</head>
+<body>
+<div id = "all">
+    <div id = "header">
+        <iframe src = "header.html" width="928px" height="200px" frameborder="0" scrolling="no" ></iframe>
+    </div>
+    <div id = "left">
+        <iframe src = "left.html" width="225px" height="450px" frameborder="0" scrolling="no"></iframe>
+    </div>
+    <div id = "right">
+        <!--<iframe name = "right" src = "index_right.html" width="670px" height = "1330px" frameborder="0" scrolling="no"></iframe>-->
+        <iframe id ="test" name = "right" src = "index_right.html" width="670px" onload = "this.height = 133" frameborder="0" scrolling="no"></iframe>
+    </div>
+    <div id = "bottom">
+        <img src = "images/end.jpg"/>
+    </div>
+</div>
+</body>
+</html>

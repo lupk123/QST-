@@ -1,0 +1,81 @@
+#header{
+    width: 928px;
+    height: 60px;
+    background: papayawhip;
+    margin: 10px auto;
+}
+#header #logo{
+    margin: 20px 0 0 60px;
+}
+#header ul{
+    float: right;
+    margin-top: 38px;
+}
+#header ul li{
+    display: inline;
+    padding: 0 5px;
+}
+#header ul li.slash{
+    border-right: 1px solid black;
+}
+#header ul li a{
+    text-decoration: none;
+}
+#main{
+    width: 928px;
+    height: auto;
+    border: 1px solid darkgrey;
+    margin: 0 auto;
+}
+#main #middle #list{
+    width: 100%;
+    height: 35px;
+    padding: 0;
+}
+#main #middle #list li{
+    display: inline;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 32px;
+}
+#main #middle #list #li-1{
+    background: url(images/register_tag_left.gif) no-repeat;
+    padding: 10px 109px;
+    margin: 0;
+}
+#main #middle #list #li-2{
+    background: url(images/register_tag_mid.gif) no-repeat;
+    padding: 10px 128px;
+    margin: 0;
+}
+#main #middle #list #li-3{
+    background: url(images/register_tag_right.gif) no-repeat;
+    padding: 10px 110px;
+    margin: 0;
+}
+#main #middle img{
+    margin-left: 100px;
+    float: left;
+}
+#main #middle h3{
+    margin-left: 180px;
+    margin-top: 20px;
+}
+#main #middle p{
+    color: red;
+    margin-left: 180px;
+    margin-bottom: 0;
+}
+#main #middle{
+    border-bottom: 1px dashed gray;
+}
+#form{
+    width: 800px;
+    height: auto;
+    margin: 20px auto;
+}
+#footer{
+    width: 928px;
+    margin: 10px auto;
+}

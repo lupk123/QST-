@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            /*border: 1px solid black;*/
+        }
+        h4{
+            color: #004790;
+        }
+        #cal{
+            width: 225px;
+            height: 215px;
+            background: url(images/leftD.jpg) no-repeat;
+        }
+        #cal #time{
+            margin: 10px 0;
+            text-align: center;
+        }
+        #cal table{
+            margin: 0 auto;
+        }
+        #cal table tr td{
+            width: 24px;
+            height: 20px;
+            text-align: center;
+        }
+        #cal table tr td.bg{
+            background: #f0f0f0;
+            border: 1px solid #d4d0c8;
+        }
+        #info_check{
+            width: 225px;
+            height: 103px;
+            background: url(images/leftS.jpg) no-repeat;
+        }
+        #info_check table{
+            font-size: 12px;
+        }
+        #info_check table td{
+            padding: 0;
+        }
+        #info_check table select{
+            width: 80px;
+        }
+        #info_check table input.text{
+            width: 128px;
+        }
+    </style>
+    <script type = "text/javascript" src = "js/cal.js"></script>
+</head>
+<body>
+    <h4>■日历</h4>
+    <div id = "cal">
+        <p id = "time"></p>
+        <table>
+            <tr>
+                <td class="bg">日</td><td class="bg">一</td><td class="bg">二</td><td class="bg">三</td><td class="bg">四</td> <td class="bg">五</td><td class="bg">六</td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td ></td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td ></td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td ></td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td ></td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td ></td>
+            </tr>
+        </table>
+    </div>
+    <h4>■信息快速搜索</h4>
+    <div id = "info_check">
+        <form action = "#" method="post">
+            <table>
+                <tr>
+                    <td>关键字：</td>
+                    <td><input type="text" name = "key" class = "text"/></td>
+                </tr>
+                <tr>
+                    <td>条　件：</td>
+                    <td>
+                        <select name = "condition">
+                            <option value = " " selected = "selected"> </option>
+                        </select>
+                        <a href = "search.html" target="right"><input type = "button" value = "搜索"/></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>搜索类型：</td>
+                    <td>
+                        <input type="radio" name = "type" value = "all"/>全文匹配
+                        <input type="radio" name = "type" value = "most"/>模糊搜索
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

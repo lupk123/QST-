@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#invite{
+    width: 670px;
+}
+#invite h4{
+    color: #004790;
+}
+#invite table{
+    width: 95%;
+    height: 180px;
+    background: #f0f0f0;
+    border: 1px solid #d4d0c8;
+}
+#invite table .left{
+    text-align: left;
+}
+#invite table .right{
+    text-align: right;
+}
+#invite table #center td{
+    text-align: center;
+}

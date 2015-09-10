@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#right{
+    width: 670px;
+}
+#right h4{
+    color: #004790;
+}
+#right table{
+  width: 100%;
+  text-align: left;
+  background: #f0f0f0;
+  border: 1px solid #d4d0c8;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#right .info{
+    width: 330px;
+    height: 160px;
+    float: left;
+    margin: 3px 0 0 2px;
+    border: 1px solid #d4d0c8;
+}
+#right .info h4{
+    margin: 0;
+    padding: 4px 0;
+    color: white;
+    background: #00b48f;
+}
+#right .info p{
+    margin-top: 50px;
+    margin-bottom: 0;
+    padding: 0;
+}
+#right .info a{
+    text-decoration: none;
+    color: black;
+}
+#right .info a p{
+    text-align: right;
+}

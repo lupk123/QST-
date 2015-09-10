@@ -1,0 +1,32 @@
+body{
+    background: #e7ecef;
+}
+#top{
+    width: 545px;
+    height: 96px;
+    margin: 150px auto 0;
+    background: url(../images/logon_top.gif) no-repeat;
+}
+#middle{
+    width: 545px;
+    height: 160px;
+    margin: 0 auto;
+    background: url(../images/logon_middle.gif);
+}
+#bottom{
+    width: 545px;
+    height: 14px;
+    margin: 0 auto;
+    background: url(../images/logon_end.gif) no-repeat;
+}
+#middle table{
+    margin: 0 auto;
+    padding-top: 50px;
+}
+#middle table td a{
+    color: black;
+    text-decoration: none;
+}
+#middle table td a:hover{
+    color: blue;
+}

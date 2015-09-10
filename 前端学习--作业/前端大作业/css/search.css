@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#search{
+    width: 670px;
+}
+#search h4{
+    color: #004790;
+}
+#search table{
+    width: 95%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #d4d0c8;
+}
+#search table td{
+    padding: 10px 0;
+}
+#search table thead tr, #search table tr.even{
+    background: #f0f0f0;
+}
+#search #search_left{
+    float: left;
+}
+#search #search_right{
+    float: right;
+    margin-right: 40px;
+}
+#search ul{
+    padding: 0;
+}
+#search ul li{
+    display: inline;
+}
+#search ul li a{
+    color: black;
+    text-decoration: none;
+}

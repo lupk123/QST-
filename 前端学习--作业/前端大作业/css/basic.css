@@ -1,0 +1,23 @@
+#all{
+    width: 924px;
+    height: auto;
+    margin: 0 auto;
+}
+#all #header{
+    width: 100%
+    height: auto;
+}
+#all #left{
+    float: left;
+    margin-right: 20px;
+    /*border: 1px solid black;*/
+}
+#all #right{
+    /*border: 1px solid black;*/
+    height: auto;
+}
+#all #bottom{
+    margin-top: 10px;
+    width: 100%;
+    /*border: 1px solid black;*/
+}

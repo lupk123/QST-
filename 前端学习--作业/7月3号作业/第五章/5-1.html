@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #left{
+            width: 300px;
+            height: auto;
+            background: #fdf0cf;
+            float: left;
+        }
+        #left h4{
+            background: #d75e00;
+            padding-top: 10px;
+            padding-left: 20px;
+            color: white;
+            margin-top: 0;
+        }
+        #left ul li{
+            color: #7da1bf;
+            margin-bottom: 20px;
+        }
+        #right{
+            width: 800px;
+            float: right;
+            height: 40px;
+            background: #f8f8f7;
+        }
+        #right ul li{
+            display: inline;
+            text-align: center;
+            padding: 0 5px;
+        }
+        #right #right-ul{
+            float: right;
+        }
+        #right #left-ul{
+            float: left;
+            padding-left: 0;
+        }
+        #right #right-ul .vline{
+            border-right: 1px solid black;
+        }
+       #right ul #shop{
+            padding-left: 23px;
+            text-align: right;
+            /*background: red;*/
+            background: url(images/dd_header_shop.gif) no-repeat left;
+        }
+        #right ul #marget{
+            padding-right: 20px;
+            background: url(images/dd_arrow_down.gif) no-repeat 95%;
+        }
+    </style>
+</head>
+<body>
+    <div id = "left">
+        <h4>浏览统计分类</h4>
+        <ul>
+            <li>中国当代小说(13909)</li>
+            <li>中国近代小....(640)</li>
+            <li>中国古典小说(1547)</li>
+            <li>四大名著(696)</li>
+            <li>港澳台小说(838)</li>
+            <li>侦探/悬疑/推..(5119)</li>
+            <li>惊悚/恐怖(3909)</li>
+            <li>魔幻(13909)</li>
+            <li>科幻(13909)</li>
+            <li>武侠(13909)</li>
+            <li>军事(13909)</li>
+            <li>情感(13909)</li>
+            <li>社会(13909)</li>
+        </ul>
+    </div>
+    <div id = "right">
+        <ul id = "left-ul">
+            <li>您好！欢迎光临[登陆 | 注册]</li>
+        </ul>
+        <ul id = "right-ul">
+            <li class = "vline" id = "shop">购物车</li>
+            <li class = "vline">个性化推荐</li>
+            <li class = "vline">礼品卡</li>
+            <li class = "vline">团购</li>
+            <li class = "vline" id = "marget">我的商城</li>
+            <li class = "vline">帮助</li>
+        </ul>
+    </div>
+</body>
+</html>

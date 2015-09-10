@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        #admin_right h4{
+            color: #004790;
+            width: 213px;
+            height: 23px;
+            background: #f0f0f0;
+            border: 1px solid #d4d0c8;
+            margin: 10px 0 1px 0;
+            padding-left: 7px;
+            padding-top: 7px;;
+        }
+        #admin_right #display{
+            width: 220px;
+            height: 157px;
+            border: 1px solid #d4d0c8;
+        }
+        #admin_right #display table select{
+            width: 100px;
+            height: 20px;
+            padding: 0;
+        }
+        #admin_right #display table input{
+            width: 30px;
+            height: 20px;;
+        }
+        #admin_right #pay{
+            width: 220px;
+            height: 80px;
+            border: 1px solid #d4d0c8;
+        }
+        #admin_right #cal{
+            width: 220px;
+            height: auto;
+            border: 1px solid #d4d0c8;
+        }
+        #admin_right .state{
+            width: 210px;
+            height: 50px;
+            margin-top: 10px;
+            margin-left: 5px;
+        }
+        #admin_right .state fieldset{
+            margin: 0;
+            padding: 0;
+        }
+        #admin_right ul{
+            margin: 0;
+            padding: 0;
+        }
+        #admin_right ul li{
+            display: inline;
+            text-align: center;
+        }
+        #admin_right #display #type{
+            height: 30px;
+            margin-top: 1px;
+            background: #d3d3d3;
+        }
+        #admin_right div .sfont{
+            font-size: 13px;
+        }
+        #admin_right #type ul{
+            padding-top: 2px;
+        }
+        #admin_right #type ul li{
+            margin: 0;
+            padding: 0;
+        }
+        #admin_right #type ul li select{
+            width: 100px;
+        }
+        #admin_right #type ul li input{
+            width: 38px;
+        }
+        #admin_right #pay p{
+            margin-left: 10px;
+        }
+        #admin_right #pay #info_pay{
+            width: 155px;
+            height: 14px;
+            margin-left: 10px;
+        }
+        #admin_right #pay #search{
+            height: 20px;
+            width: 40px;
+        }
+        #admin_right #cal{
+            font-size: 10px;
+        }
+        #admin_right #cal p{
+            text-align: center;
+            margin: 5px 0;
+        }
+        #admin_right #cal table tr td.bg{
+            width: 30px;
+            height: 25px;
+            background: #f0f0f0;
+            border: 1px solid #d4d0c8;
+            /*background: lightpink;*/
+        }
+    </style>
+    <script type = "text/javascript" src = "js/cal.js"></script>
+</head>
+<body>
+    <div id = "admin_right">
+        <h4>■显示方式</h4>
+        <div id = "display">
+            <div class = "state sfont">
+                <fieldset>
+                    <legend>★付费状态</legend>
+                    <ul>
+                        <li><input type = "radio" name = "pay" value = "0"/>未付费</li>
+                        <li><input type = "radio" name = "pay" value = "1"/>已付费</li>
+                        <li><input type = "radio" name = "pay" value = "2"/>全部</li>
+                    </ul>
+                </fieldset>
+            </div>
+            <div class = "state sfont">
+                <fieldset>
+                    <legend>★审核状态</legend>
+                    <ul>
+                        <li><input type = "radio" name = "check" value = "0"/>未审核</li>
+                        <li><input type = "radio" name = "check" value = "1"/>已审核</li>
+                        <li><input type = "radio" name = "check" value = "2"/>全部</li>
+                    </ul>
+                </fieldset>
+            </div>
+            <div id = "type" class = "sfont">
+                <ul>
+                   <li>信息类别:</li>
+                   <li>
+                        <select name = "page">
+                            <option value = "0"> </option>
+                            <option value = "0">招聘信息</option>
+                            <option value = "0">暂时没有信息</option>
+                        </select>
+                   </li>
+                   <li>
+                       <a href = "invite_job.html" target = "left"><input type = "button" value = "显示" name = "print"/></a>
+                   </li>
+                </ul>
+            </div>
+        </div>
+        <h4>■付费设置</h4>
+        <div id = "pay" class = "sfont">
+            <p>请输入要付费的信息：</p>
+            <form action = "#" method="post">
+                <input type = "text" name = "info_pay" id = "info_pay"/>
+                <a href = "pay_id_check.html" target="left"><input type = "button" value = "查询" id = "search"/></a>
+            </form>
+        </div>
+        <h4>■日历</h4>
+        <div id = "cal">
+            <p id = "time">
+            </p>
+            <!--<table>-->
+                <!--<tr>-->
+                    <!--<td class="bg">日</td><td class="bg">一</td><td class="bg">二</td><td class="bg">三</td><td class="bg">四</td> <td class="bg">五</td><td class="bg">六</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td></td><td></td><td></td><td class="bg">1</td><td class="bg">2</td><td class="bg">3</td><td class="bg">4</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td class="bg">5</td><td class="bg">6</td><td class="bg">7</td><td class="bg">8</td><td class="bg">9</td><td class="bg">10</td> <td class="bg">11</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td class="bg">12</td><td class="bg">13</td><td class="bg">14</td> <td class="bg">15</td><td class="bg">16</td> <td class="bg">17</td><td class="bg">18</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td class="bg">19</td><td class="bg">20</td><td class="bg">21</td><td class="bg">22</td><td class="bg">23</td><td class="bg">24</td><td class="bg">25</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td class="bg">26</td><td class="bg">27</td><td class="bg">28</td><td class="bg">29</td><td class="bg">30</td><td class="bg">31</td><td></td>-->
+                <!--</tr>-->
+                <!--&lt;!&ndash;<tr>&ndash;&gt;-->
+                <!--&lt;!&ndash;<td class="bg"></td><td></td><td></td><td></td><td></td><td></td><td></td>&ndash;&gt;-->
+                <!--&lt;!&ndash;</tr>&ndash;&gt;-->
+            <!--</table>-->
+            <table>
+                <tr>
+                    <td class="bg">日</td><td class="bg">一</td><td class="bg">二</td><td class="bg">三</td><td class="bg">四</td> <td class="bg">五</td><td class="bg">六</td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td ></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td ></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td ></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td ></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td ></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

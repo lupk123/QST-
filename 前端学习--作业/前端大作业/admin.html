@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>管理员登陆</title>
+    <link rel = "stylesheet" href="css/admin.css"/>
+    <script>
+        window.onload = function(){
+            var form = document.getElementsByTagName("form");
+            form[0].onsubmit = function(){
+                window.open("manage.html");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id = "top"> </div>
+    <div id = "middle">
+        <form action = "#" method="post">
+            <table>
+                <tr>
+                    <td>用户名：</td>
+                    <td><input type = "text" name = "username"/></td>
+                </tr>
+                <tr>
+                    <td>密　码：</td>
+                    <td><input type = "password" name = "passwd"/></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type = "submit" value = "登陆"/>
+                        <input type = "reset" value = "重置"/>
+                        [<a href = "index.html">返回首页</a>]
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div id = "bottom"> </div>
+</body>
+</html>

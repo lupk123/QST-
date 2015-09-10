@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//trD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/trD/xhtml1-strict.trd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<title>购物车</title>
+	<style type="text/css">
+        body {
+			color: #333;
+			font-size: 12px;
+			line-height: 20px;
+			margin:0 auto;
+			width:960px;
+		}
+		a{
+			color: #1965b3;
+			text-decoration: none;
+		}
+		.shopping_list{
+			float: right;
+			list-style: outside none none;
+			margin: 10px 0 0 15px;
+		}
+		.commend_list{
+			float: left;
+			list-style: outside none none;
+			text-align: center;
+			margin-bottom: 10px;
+		}
+       	tr{
+			height: 40px;	
+		}
+        .buy{
+            color: #bd3e00;
+        }
+	</style>
+	</head>
+	<body>
+		<div id="header" style="height:160px;width:960px;" >
+            <iframe src = "header.html" name = "header" scrolling="no" width = "960px" frameborder="0"></iframe>
+		</div>
+		<div>
+			<img src="images/shopping_myshopping.gif">全场免运费活动中
+		</div>
+		<div style='background-image: url("images/shopping_commend_bg.gif");background-repeat: repeat-x;border: 1px solid #999;height: 21px;'>根据您挑选的商品，我们为您推荐
+		</div>
+
+		  <div style="height:140px;border: 1px solid #999;">
+		   <div style="float:left;width: 450px;border-right: 1px dashed #ccc;">
+               <ul>
+                <li class="commend_list" style="width: 200px;text-align:left;">·<a class="blue" href="#">JavaScript DOM编程艺术</a></li>
+                <li class="commend_list" style="text-decoration: line-through; width: 70px;">￥39.00</li>
+                <li class="commend_list"  style="width: 70px;">￥29.30</li>
+                <li class="commend_list"  style="width: 65px;"><a href="#" class = "buy">购买</a></li>
+               </ul>
+               <ul>
+                   <li class="commend_list" style="width: 200px;text-align:left;">·<a class="blue" href="#">解禁(本网站首发)</a></li>
+                   <li class="commend_list" style="text-decoration: line-through; width: 70px;">￥29.00</li>
+                   <li class="commend_list"  style="width: 70px;">￥19.40</li>
+                   <li class="commend_list"  style="width: 65px;"><a href="#" class = "buy">购买</a></li>
+               </ul>
+               <ul>
+                   <li class="commend_list" style="width: 200px;text-align:left;">·<a class="blue" href="#">地王之王(金融危机)..</a></li>
+                   <li class="commend_list" style="text-decoration: line-through; width: 70px;">￥32.80</li>
+                   <li class="commend_list"  style="width: 70px;">￥25.10</li>
+                   <li class="commend_list"  style="width: 65px;"><a href="#" class = "buy">购买</a></li>
+               </ul>
+               <ul>
+                   <li class="commend_list" style="width: 200px;text-align:left;">·<a class="blue" href="#">逸庄</a></li>
+                   <li class="commend_list" style="text-decoration: line-through; width: 70px;">￥36.00</li>
+                   <li class="commend_list"  style="width: 70px;">￥25.30</li>
+                   <li class="commend_list"  style="width: 65px;"><a href="#" class = "buy">购买</a></li>
+               </ul>
+		   </div>
+		   <div style="float:left;width: 450px;">
+                <ul>
+                  <li class="commend_list" style="width: 200px;text-align:left">·<a class="blue" href="#">深入浅出MySQL数据库开...</a></li>
+                  <li class="commend_list" style="text-decoration: line-through; width: 70px;">￥59.00</li>
+                  <li class="commend_list" style="width: 70px;">￥47.20</li>
+                  <li class="commend_list" style="width:65px;"><a class="shopping_yellow buy" href="#">购买</a></li>
+                </ul>
+               <ul>
+                   <li class="commend_list" style="width: 200px;text-align:left">·<a class="blue" href="#">大玩家</a></li>
+                   <li class="commend_list" style="text-decoration: line-through; width: 70px;">￥59.00</li>
+                   <li class="commend_list" style="width: 70px;">￥47.20</li>
+                   <li class="commend_list" style="width:65px;"><a class="shopping_yellow buy" href="#">购买</a></li>
+               </ul>
+               <ul>
+                   <li class="commend_list" style="width: 200px;text-align:left">·<a class="blue" href="#">都市风水师-官场小说..</a></li>
+                   <li class="commend_list" style="text-decoration: line-through; width: 70px;">￥59.00</li>
+                   <li class="commend_list" style="width: 70px;">￥47.20</li>
+                   <li class="commend_list" style="width:65px;"><a class="shopping_yellow buy" href="#">购买</a></li>
+               </ul>
+               <ul>
+                   <li class="commend_list" style="width: 200px;text-align:left">·<a class="blue" href="#">国戏</a></li>
+                   <li class="commend_list" style="text-decoration: line-through; width: 70px;">￥59.00</li>
+                   <li class="commend_list" style="width: 70px;">￥47.20</li>
+                   <li class="commend_list" style="width:65px;"><a class="shopping_yellow buy" href="#">购买</a></li>
+               </ul>
+			</div>
+		  </div>
+		
+	
+	
+		<div style="font-size:14px;font-weight:bold;margin-top:20px;">您已选择以下商品</div>
+		<div style="border: 2px solid #999;">
+			<table width="100%" cellspacing="0" cellpadding="0">
+				<thead>
+					<tr style="background-color: #d8e4c6;height: 25px;">
+					   <th>商品名</th>
+					   <th>单品积分</th>
+					   <th>市场价</th>
+					   <th>优惠价</th>
+					   <th>数量</th>
+					   <th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+					   <td style="border-bottom: 1px dashed #ccc;"><a href="#">私募（首部披露资本博弈秘密的金融...</a></td>
+					   <td style="text-align: center;border-bottom: 1px dashed #ccc;">189</td>
+					   <td style="text-align: center;border-bottom: 1px dashed #ccc;">￥32.00</td>
+					   <td style="text-align: center;border-bottom: 1px dashed #ccc;">￥18.90(59折)</td>
+					   <td style="text-align: center;border-bottom: 1px dashed #ccc;"><input type="text" value="1" size="3" style=" border: 1px solid #666; height: 15px;text-align: center;"></td>
+					   <td style="text-align: center;border-bottom: 1px dashed #ccc;"><a href="#">删除</a></td>
+					</tr>
+				   <tr>
+					   <td style="border-bottom: 1px dashed #ccc;"><a  href="#"> 小团圆（张爱玲最神秘小说遗稿）</a></td>
+					   <td style="text-align: center;border-bottom: 1px dashed #ccc;">173</td>
+					   <td style="text-align: center;border-bottom: 1px dashed #ccc;">￥28.00</td>
+					   <td style="text-align: center;border-bottom: 1px dashed #ccc;">￥17.30(62折)</td>
+					   <td style="text-align: center;border-bottom: 1px dashed #ccc;"><input type="text"  value="1" size="3" style=" border: 1px solid #666; height: 15px;text-align: center;"></td>
+					   <td  style="text-align: center;border-bottom: 1px dashed #ccc;"><a href="#">删除</a></td>
+				   </tr>
+					<tr>
+					   <td style="border-bottom: 1px dashed #ccc;"><a href="#">不抱怨的世界(畅销全球80国的世界...</a></td>
+					   <td style="text-align: center;border-bottom: 1px dashed #ccc;">154</td>
+					   <td style="text-align: center;border-bottom: 1px dashed #ccc;">￥24.80</td>
+					   <td style="text-align: center;border-bottom: 1px dashed #ccc;">￥15.40(62折)</td>
+					   <td style="text-align: center;border-bottom: 1px dashed #ccc;"><input type="text"  value="2" size="3"></td>
+					   <td style="text-align: center;border-bottom: 1px dashed #ccc;"><a href="#">删除</a></td>
+					</tr>  
+					<tr>
+					   <td style="border-bottom: 1px dashed #ccc;"><a href="#">福玛特双桶洗衣机XPB20-07S</a></td>
+					   <td style="text-align: center;border-bottom: 1px dashed #ccc;">358</td>
+					   <td style="text-align: center;border-bottom: 1px dashed #ccc;">￥458.00</td>
+					   <td style="text-align: center;border-bottom: 1px dashed #ccc;">￥358.00(78折)</td>
+					   <td style="text-align: center;border-bottom: 1px dashed #ccc;"><input type="text"  value="1" size="3"></td>
+					   <td style="text-align: center;border-bottom: 1px dashed #ccc;"><a  href="#">删除</a></td>
+					</tr>   
+					<tr>
+					   <td style="border-bottom: 1px dashed #ccc;"><a href="#">PHP和MySQL Web开发 （原书第4版）</a></td>
+					   <td style="text-align: center;border-bottom: 1px dashed #ccc;">712</td>
+					   <td style="text-align: center;border-bottom: 1px dashed #ccc;">￥95.00</td>
+					   <td style="text-align: center;border-bottom: 1px dashed #ccc;">￥71.20(75折)</td>
+					   <td style="text-align: center;border-bottom: 1px dashed #ccc;"><input type="text"  value="1" size="3"></td>
+					   <td style="text-align: center;border-bottom: 1px dashed #ccc;"><a href="#">删除</a></td>
+					</tr>   
+					<tr>
+					   <td style="border-bottom: 1px dashed #ccc;"><a  href="#">法布尔昆虫记</a>（再买￥68.30即可参加“满199元减10元现金”活动）</td>
+					   <td style="text-align: center;border-bottom: 1px dashed #ccc;">10</td>
+					   <td style="text-align: center;border-bottom: 1px dashed #ccc;">￥198.00</td>
+					   <td style="text-align: center;border-bottom: 1px dashed #ccc;">￥130.70(66折)</td>
+					   <td style="text-align: center;border-bottom: 1px dashed #ccc;"><input type="text"  value="1" size="3"></td>
+					   <td style="text-align: center;border-bottom: 1px dashed #ccc;"><a href="#">删除</a></td>
+					</tr>
+				</tbody>
+			</table>   
+		
+			<div style="background-color: #cddbb8;height: 60px;">
+				<ul>
+				   <li class="shopping_list"><input type="image" src="images/shopping_balance.gif" name=""></li>
+				   <li class="shopping_list">￥<span style="font-size: 14px;color:#bd3e00;font-weight:bold">626.9</span></li>
+				   <li class="shopping_list">商品金额总计：</li>
+				   <li class="shopping_list">您共节省金额：￥<span class = "buy">233.7</span><br>
+					可获商品积分：<span class = "buy">1750</span>
+				   </li>
+			   </ul>
+			</div>
+		</div>
+		<div id="footer" style="height:100px;width:960px;">
+            <iframe src = "footer.html" scrolling="no" frameborder="0" width="960px"></iframe>
+		</div>
+	</body>
+</html>

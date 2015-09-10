@@ -1,0 +1,331 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BEA9A99A-B98C-4C71-9B35-847DFF194A7F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>webTest</RootNamespace>
+    <AssemblyName>webTest</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\style.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="error.html" />
+    <Content Include="images\admin_exit.gif" />
+    <Content Include="images\admin_index.gif" />
+    <Content Include="images\admin_menu.jpg" />
+    <Content Include="images\admin_top.jpg" />
+    <Content Include="images\back.gif" />
+    <Content Include="images\b_logon.gif" />
+    <Content Include="images\b_reset.gif" />
+    <Content Include="images\default_e.jpg" />
+    <Content Include="images\default_m.jpg" />
+    <Content Include="images\default_t.jpg" />
+    <Content Include="images\end.jpg" />
+    <Content Include="images\leftD.jpg" />
+    <Content Include="images\leftS.jpg" />
+    <Content Include="images\logo.gif" />
+    <Content Include="images\logon_end.gif" />
+    <Content Include="images\logon_middle.gif" />
+    <Content Include="images\logon_top.gif" />
+    <Content Include="images\menu.gif" />
+    <Content Include="images\m_index.gif" />
+    <Content Include="images\pcard1.jpg" />
+    <Content Include="images\pcard2.jpg" />
+    <Content Include="js\DeleteCheck.js" />
+    <Content Include="js\InputCheck.js" />
+    <Content Include="js\rili.js" />
+    <Content Include="My97DatePicker\calendar.js" />
+    <Content Include="My97DatePicker\config.js" />
+    <Content Include="My97DatePicker\lang\en.js" />
+    <Content Include="My97DatePicker\lang\zh-cn.js" />
+    <Content Include="My97DatePicker\lang\zh-tw.js" />
+    <Content Include="My97DatePicker\My97DatePicker.htm" />
+    <Content Include="My97DatePicker\skin\datePicker.gif" />
+    <Content Include="My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="My97DatePicker\skin\default\img.gif" />
+    <Content Include="My97DatePicker\skin\WdatePicker.css" />
+    <Content Include="My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="My97DatePicker\WdatePicker.js" />
+    <Content Include="page.html" />
+    <Content Include="pages\add\addInfo.aspx" />
+    <Content Include="pages\add\addInfo.html" />
+    <Content Include="pages\admin\info\checkshow.aspx" />
+    <Content Include="pages\admin\info\checkshow.html" />
+    <Content Include="pages\admin\info\listshow.aspx" />
+    <Content Include="pages\admin\info\listshow.html" />
+    <Content Include="pages\admin\login.aspx" />
+    <Content Include="pages\admin\login.html" />
+    <Content Include="pages\admin\view\AdminTemp.aspx" />
+    <Content Include="pages\admin\view\AdminTemp.html" />
+    <Content Include="pages\admin\view\default.aspx" />
+    <Content Include="pages\admin\view\default.html" />
+    <Content Include="pages\admin\view\end.aspx" />
+    <Content Include="pages\admin\view\end.html" />
+    <Content Include="pages\admin\view\main.aspx" />
+    <Content Include="pages\admin\view\main.html" />
+    <Content Include="pages\admin\view\right.aspx" />
+    <Content Include="pages\admin\view\right.html" />
+    <Content Include="pages\admin\view\top.aspx" />
+    <Content Include="pages\admin\view\top.html" />
+    <Content Include="pages\show\delete.aspx" />
+    <Content Include="pages\show\listshow.aspx" />
+    <Content Include="pages\show\listshow.html" />
+    <Content Include="pages\show\modify.aspx" />
+    <Content Include="pages\show\searchshow.aspx" />
+    <Content Include="pages\show\searchshow.html" />
+    <Content Include="pages\show\singleshow.aspx" />
+    <Content Include="pages\show\singleshow.html" />
+    <Content Include="view\default.aspx" />
+    <Content Include="view\default.html" />
+    <Content Include="view\end.aspx" />
+    <Content Include="view\end.html" />
+    <Content Include="view\indextemp.aspx" />
+    <Content Include="view\indextemp.html" />
+    <Content Include="view\left.aspx" />
+    <Content Include="view\left.html" />
+    <Content Include="view\top.aspx" />
+    <Content Include="view\top.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dao\DBHelper.cs" />
+    <Compile Include="dao\TbInfoService.cs" />
+    <Compile Include="dao\TbTypeService.cs" />
+    <Compile Include="dao\UsersService.cs" />
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="model\Info.cs" />
+    <Compile Include="model\Search.cs" />
+    <Compile Include="model\SearchType.cs" />
+    <Compile Include="model\TbType.cs" />
+    <Compile Include="model\Users.cs" />
+    <Compile Include="pages\add\addInfo.aspx.cs">
+      <DependentUpon>addInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\add\addInfo.aspx.designer.cs">
+      <DependentUpon>addInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\admin\info\checkshow.aspx.cs">
+      <DependentUpon>checkshow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\admin\info\checkshow.aspx.designer.cs">
+      <DependentUpon>checkshow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\admin\info\listshow.aspx.cs">
+      <DependentUpon>listshow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\admin\info\listshow.aspx.designer.cs">
+      <DependentUpon>listshow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\admin\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\admin\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\admin\view\AdminTemp.aspx.cs">
+      <DependentUpon>AdminTemp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\admin\view\AdminTemp.aspx.designer.cs">
+      <DependentUpon>AdminTemp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\admin\view\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\admin\view\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\admin\view\end.aspx.cs">
+      <DependentUpon>end.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\admin\view\end.aspx.designer.cs">
+      <DependentUpon>end.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\admin\view\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\admin\view\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\admin\view\right.aspx.cs">
+      <DependentUpon>right.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\admin\view\right.aspx.designer.cs">
+      <DependentUpon>right.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\admin\view\top.aspx.cs">
+      <DependentUpon>top.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\admin\view\top.aspx.designer.cs">
+      <DependentUpon>top.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\show\delete.aspx.cs">
+      <DependentUpon>delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\show\delete.aspx.designer.cs">
+      <DependentUpon>delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\show\listshow.aspx.cs">
+      <DependentUpon>listshow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\show\listshow.aspx.designer.cs">
+      <DependentUpon>listshow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\show\modify.aspx.cs">
+      <DependentUpon>modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\show\modify.aspx.designer.cs">
+      <DependentUpon>modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\show\searchshow.aspx.cs">
+      <DependentUpon>searchshow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\show\searchshow.aspx.designer.cs">
+      <DependentUpon>searchshow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\show\singleshow.aspx.cs">
+      <DependentUpon>singleshow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\show\singleshow.aspx.designer.cs">
+      <DependentUpon>singleshow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="view\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\end.aspx.cs">
+      <DependentUpon>end.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\end.aspx.designer.cs">
+      <DependentUpon>end.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\indextemp.aspx.cs">
+      <DependentUpon>indextemp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\indextemp.aspx.designer.cs">
+      <DependentUpon>indextemp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\left.aspx.cs">
+      <DependentUpon>left.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\left.aspx.designer.cs">
+      <DependentUpon>left.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\top.aspx.cs">
+      <DependentUpon>top.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\top.aspx.designer.cs">
+      <DependentUpon>top.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3607</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
